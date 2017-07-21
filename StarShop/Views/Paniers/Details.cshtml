@@ -1,0 +1,42 @@
+﻿@model StarShop.Models.Panier
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Panier</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.idUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nbrProduit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nbrProduit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.somme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.somme)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idPanier }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
